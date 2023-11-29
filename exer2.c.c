@@ -19,16 +19,16 @@ int main()
 
     for (i = 0; i < l; i++)
     {
-        printf("nome do %d∫ aluno:",i+1);
+        printf("Nome do %d¬∫ aluno:",i+1);
         gets(aluno[i]);
 
-        printf("idade:");
+        printf("Idade:");
         scanf("%d",&idade[i]);
         fflush(stdin);
 
         for (c = 0; c < n; c++)
         {
-            printf("informe a %d™ nota:", c + 1);
+            printf("Informe a %d¬™ nota:", c + 1);
             scanf("%f", &nota[i][c]);
             soma += nota[i][c];
         }
@@ -43,7 +43,7 @@ int main()
         }
          if (media[i] < 7 && media[i] >= 5)
         {
-            strcpy(situacao[i], "RECUPERA«√O.");
+            strcpy(situacao[i], "RECUPERA√á√ÉO.");
         }
         else if(media[i] < 5)
         {
@@ -54,15 +54,15 @@ int main()
     // resultados
     for (i = 0; i < l; i++)
     {
-        printf("nome do %d∫ aluno: %s\n",i+1, aluno[i]);
-        printf("idade: %d anos\n", idade[i]);
+        printf("Nome do %d¬∫ aluno: %s\n",i+1, aluno[i]);
+        printf("Idade: %d anos\n", idade[i]);
 
         for (c = 0; c < n; c++)
         {
-            printf("%d™ nota: %.1f\n", c + 1, nota[i][c]);
+            printf("%d¬™ nota: %.1f\n", c + 1, nota[i][c]);
         }
-        printf("MÈdia: %.1f\n", media[i]);
-        printf("situaÁ„o do aluno: %s\n", situacao[i]);
+        printf("M√©dia: %.1f\n", media[i]);
+        printf("Situa√ß√£o do aluno: %s\n", situacao[i]);
         printf("\n");
     }
 
